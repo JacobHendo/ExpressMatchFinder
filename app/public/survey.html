@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Love Finder</title>
-    <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -191,7 +190,7 @@
                     return valid;
                 }
                 if (validateForm() == true) {
-                    var newFriend = {
+                    var newLove = {
                         name: $("#name").val().trim(),
                         profilePic: $("#photo").val().trim(),
                         scores: [
@@ -207,7 +206,7 @@
                             $("q10").val(),
                         ]
                     };
-                    $.post("/api/friends", newFriend,
+                    $.post("/api/friends", newLove,
                         function (data) {
                            
                             $("#name").val("");
@@ -228,7 +227,6 @@
                     M.toast({ html: 'Must complete all fields.' })
                 }
             });
-            module.exports = newLove;
         });
     </script>
 </body>
