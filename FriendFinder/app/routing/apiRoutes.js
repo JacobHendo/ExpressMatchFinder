@@ -1,5 +1,4 @@
 var path = require("path");
-
 var possibleMatches = require("../data/friends.js")
 
 module.exports = (app)=> {
@@ -7,6 +6,8 @@ module.exports = (app)=> {
         res.json(possibleMatches);
     });
 
+
+    
     app.post('/api/friends', (req, res)=> {
         
         var userScores = req.body.scores;
@@ -28,8 +29,8 @@ module.exports = (app)=> {
         }
 
        
-        var newFriend = possibleMatches[newLove];
-        res.json(newFriend);
+        var newLove = possibleMatches[newLove];
+        res.json(newLove);
 
         
         possibleMatches.push(req.body);
