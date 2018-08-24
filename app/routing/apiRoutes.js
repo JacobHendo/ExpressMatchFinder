@@ -6,8 +6,6 @@ module.exports = (app)=> {
         res.json(possibleMatches);
     });
 
-
-    
     app.post('/api/friends', (req, res)=> {
         
         var userScores = req.body.scores;
