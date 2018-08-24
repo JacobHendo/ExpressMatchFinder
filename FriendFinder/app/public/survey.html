@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Finder</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Find Your True Love</h1>
+        <p>Simply answer these few Questions and your true love will appear!</p> 
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="card mb-3">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">True Love Survey</h5>
+                        <p class="card-text">Answer each question ranking from 1 - 5 depending on how much you agree with the statement.</p>
+                        <p class="card-text">1 means you  disagree completely, 5 means you agree completely. </p>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" placeholder="First name">
+                                <label for="name">Photo Link</label>
+                                <input type="text" class="form-control" placeholder="image link">
+                                <br>
+                                <!-- question 1 -->
+                                <label for="q1">1) I love to drink wine.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q1" name="q1">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 2 -->
+                                <label for="q2">2) I keep my house very clean.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q2" name="q2">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 3 -->
+                                <label for="q3">3) I don't like pets.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q3" name="q3">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 4 -->
+                                <label for="q4">4) I love the beach.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q4" name="q4">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 5 -->
+                                <label for="q5">5) I travel as much as I can.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q5" name="q5">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 6 -->
+                                <label for="q6">6) I make more than $100,000 per year.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q6" name="q6">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 7 -->
+                                <label for="q7">7) I like dive bars over clubs.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q7" name="q7">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 8 -->
+                                <label for="q8">8) My Family is every thing.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q8" name="q8">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 9 -->
+                                <label for="q9">9) Snow over the sun.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q9" name="q9">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                                <!-- question 10 -->
+                                <label for="q10">10) Tv shows are better than Movies.</label>
+                                <br>
+                                <select class="questionAwnsers" id="q10" name="q10">
+                                    <option value=""></option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <br> <br>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content center-align">
+            <h4>Your New Love:</h4>
+            <h5 id="matchName"></h5>
+            <img id="matchPic" src="" alt="No Image" width=2 50px>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+        </div>
+    </div>
+</div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(()=> {
+            $("#submit").on("click", (event)=> {
+                event.preventDefault();
+                function validateForm() {
+                    var valid = true;
+                    $(".validate").each( ()=> {
+                        if ($(this).val() === "") {
+                            valid = false;
+                        }
+                    });
+                    $(".browser-default").each(()=> {
+                        if ($(this).val() === "") {
+                            valid = false;
+                        }
+                    });
+                    return valid;
+                }
+                if (validateForm() == true) {
+                    var newFriend = {
+                        name: $("#name").val().trim(),
+                        profilePic: $("#photo").val().trim(),
+                        scores: [
+                            $("q1").val(),
+                            $("q2").val(),
+                            $("q3").val(),
+                            $("q4").val(),
+                            $("q5").val(),
+                            $("q6").val(),
+                            $("q7").val(),
+                            $("q8").val(),
+                            $("q9").val(),
+                            $("q10").val(),
+                        ]
+                    };
+                    $.post("/api/friends", newFriend,
+                        function (data) {
+                           
+                            $("#name").val("");
+                            $("#photo").val("");
+                            $("#q1").val("");
+                            $("#q2").val("");
+                            $("#q3").val("");
+                            $("#q4").val("");
+                            $("#q5").val("");
+                            $("#q6").val("");
+                            $("#q7").val("");
+                            $("#q8").val("");
+                            $("#q9").val("");
+                            $("#q10").val("");
+                        });
+                }
+                else {
+                    M.toast({ html: 'Must complete all fields.' })
+                }
+            });
+            module.exports = newFriend;
+        });
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
